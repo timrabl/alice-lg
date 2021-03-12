@@ -11,7 +11,7 @@ This secound image simply runs the executable.
 Yes, thats it... nothing more.  
 
 ## example.conf ##
-The provided `example.conf` file is cloned 1:1 from the source repository, as of today: *Thu, 11 Mar 2021 23:35:13 +0000*.  
+The provided `example.conf` file is cloned 1:1 from the source repository, as of today: **Thu, 11 Mar 2021 23:35:13 +0000**.  
 You can find the orignal file [here](https://github.com/alice-lg/alice-lg/blob/master/etc/alice-lg/alice.example.conf).  
 
 ## docker-compose.example.conf ##
