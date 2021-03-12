@@ -1,4 +1,4 @@
-# alice-lg ( ~forked~ / reworked ) #
+# docker alice-lg ( reworked ) #
 Your friendly loo.. Your docker based lookingglass.  
 This repo is based on the original repository: [alice-lg](https://github.com/alice-lg/alice-lg.git). 
 
