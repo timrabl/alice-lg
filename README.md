@@ -17,17 +17,3 @@ You can find the orignal file [here](https://github.com/alice-lg/alice-lg/blob/m
 ## docker-compose.example.conf ##
 This is a simple example docker-compose file, which **have to be adopted**, to run this image.  
 See the [docekr compose docs](https://docs.docker.com/compose/) for more information.  
-
-## build requirements ##
-| package |
-| :-----: |
-| nodejs |
-| nodejs-npm |
-| go |
-| git |
-| make |
-| g++ |
-| musl-dev |
-| python2 |
-| gulp-cli |
-| yarn (installed via make ) |
