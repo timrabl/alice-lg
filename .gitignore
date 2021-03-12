@@ -1,8 +1,8 @@
 # Ignore production files
 **/*
-!.gitignore
 
-# Allow example files
+# Allow some stuff
+!.gitignore
 !Dockerfile
 !README.md
 !example.conf
