@@ -1,0 +1,9 @@
+# Ignore production files
+**/*
+!.gitignore
+
+# Allow example files
+!Dockerfile
+!README.md
+!example.conf
+!docker-compose.example.yaml

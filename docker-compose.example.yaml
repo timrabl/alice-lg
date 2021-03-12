@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  alice-lg:
+    image: replace-this-with-your-registry/alice-lg
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./example.conf:/etc/alice-lg/alice.conf
