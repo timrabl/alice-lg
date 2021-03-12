@@ -19,7 +19,7 @@ This is a simple example docker-compose file, which **have to be adopted**, to r
 See the [docekr compose docs](https://docs.docker.com/compose/) for more information.  
 
 ## build requirements ##
-| package & version |
+| package |
 | :-----: |
 | nodejs |
 | nodejs-npm |
