@@ -1,4 +1,4 @@
-# Ignore production files
+# Protect production files
 **/*
 
 # Allow some stuff
