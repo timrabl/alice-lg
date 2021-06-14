@@ -22,17 +22,16 @@ jobs:
       - name: docker login
         id: dockerhub_login
         env:
-          DOCKERHUB_USERNAME: ${{ secrets.dockerhub_username }}
           DOCKERHUB_PASSWORD: ${{ secrets.dockerhub_password }}
         run: |
           echo "::add-mask::$DOCKERHUB_PASSWORD"
-          docker login --username "$DOCKERHUB_USERNAME" --password "${DOCKERHUB_PASSWORD}"
+          docker login --username "timrabl" --password "${DOCKERHUB_PASSWORD}"
 
       - name: docker build
-        run: docker build -t ${{ secrets.dockerhub_username }}/alice-lg:$(date %s) -f Dockerfile .
+        run: docker build -t timrabl/alice-lg:$(date %s) -f Dockerfile .
 
       - name: docker push
-        run: docker push ${{ secrets.dockerhub_username }}/alice-lg
+        run: docker push timrabl/alice-lg
 
 
 
