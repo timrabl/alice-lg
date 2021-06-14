@@ -1,16 +1,15 @@
 ---
 name: Docker Image CI
 
-x-branches: &x-branches
-  branches:
-    - master
-    - main
-
 on:
   push:
-    <<: *x-branches
+    branches:
+      - master
+      - main
   pull_request:
-    <<: *x-branches
+    branches:
+      - master
+      - main
 
 jobs:
   build:
