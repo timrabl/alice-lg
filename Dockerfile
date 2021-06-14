@@ -1,12 +1,14 @@
 FROM node:10.24-alpine3.11
 
 # First dummy image
-ENV GOROOT="/usr/lib/go"
+ENV GOROOT="/usr/local/go"
 ENV GOPATH="$HOME/go"
-ENV PATH="$PATH:$GOPATH/bin"
+ENV PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 ENV APPPATH="$GOPATH/src/github.com/alice-lg"
 
-RUN apk add --update --no-cache go git make g++ musl-dev python2 && \
+COPY --from=golang:1.16.5-alpine3.13 ${GOROOT} ${GOROOT}
+
+RUN apk add --update --no-cache git make g++ musl-dev python2 && \
     npm install --global gulp-cli && \
     mkdir -p $GOPATH/bin $GOPATH/pkg $APPPATH && \
     cd $APPPATH && \
