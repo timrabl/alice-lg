@@ -1,9 +1,5 @@
-# Ignore production files
-**/*
-!.gitignore
+# MacOS crap
+.DS_Store
 
-# Allow example files
-!Dockerfile
-!README.md
-!example.conf
-!docker-compose.example.yaml
+# Git folder
+.git/
