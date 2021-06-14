@@ -4,10 +4,6 @@
 name: 'GitHub alice-lg docker build'
 description: 'This GitHub action build the timrabl/alice-lg docker image.'
 
-outputs:
-  time:
-    description: 'Required build time'
-
 runs:
   using: 'docker'
   image: '../Dockerfile'

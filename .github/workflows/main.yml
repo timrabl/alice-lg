@@ -1,4 +1,4 @@
-
+---
 on:
   - push
 
@@ -10,6 +10,3 @@ jobs:
       - name: Build alice-lg alpine docker image
         id: alpine_build
         uses: actions/build@v1
-
-      - name: Get required time
-        run: echo 'Required time: ${{ steps.alpine_build.outputs.time }}'
