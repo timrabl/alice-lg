@@ -1,9 +1,5 @@
-# Protect production files
-**/*
+# MacOS crap
+.DS_Store
 
-# Allow some stuff
-!.gitignore
-!Dockerfile
-!README.md
-!example.conf
-!docker-compose.example.yaml
+# Git folder
+.git/
